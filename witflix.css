@@ -1,6 +1,10 @@
 body{
+    display: flex;
+    flex-direction: column;
     font-family: Helvetica, Arial, sans-serif;
+    gap: 2rem;
 }
+
 
 header{
 
@@ -33,3 +37,152 @@ display: flex;
 align-items: center;
 gap:0.5rem;
 }
+
+
+main{
+ border: 1px solid #707070;
+ padding: 1rem;
+ aspect-ratio: 4/2;
+ display: flex;
+ align-items: center;
+ align-content: center;
+}
+
+main h1{
+    margin:0
+}
+
+.main-movie{
+
+    display: flex;
+    flex-direction: column;
+    gap:0.1rem;
+}
+
+
+
+.rating{
+    display: flex;
+    align-items: center;;
+}
+
+.lorem {
+    width: 60%;
+    margin: 0;
+}
+
+.movie-info{
+display: flex;
+gap: 1em;
+align-items: center;
+align-content: center;
+}
+
+.fa-star{
+    color:red;
+}
+
+.age-rating{
+color:black;
+border: 1px solid black;
+border-radius: 15%;
+padding: 0.25rem;
+}
+
+
+main h1 {
+font-size: 2.5rem;
+}
+
+.btn{
+padding: 0.8rem;
+border: none;
+background-color: red;
+color: white;
+border-radius: 0.5rem;
+cursor: pointer;
+}
+
+.main-movie:last-child{
+display: inline-block;
+}
+
+
+/**  SECTION */
+
+
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie-cards{
+    display: flex;
+gap: 5rem;
+width: 100%;
+overflow-x: auto; 
+white-space: nowrap;
+scroll-behavior: smooth;
+padding: 10px;
+}
+
+.movie-item{    
+    border: 1px solid black;
+    min-height: 300px;
+
+    min-width: 30%;
+
+    flex-direction: column;
+    padding: 1rem;
+    align-content:center ;
+    justify-content: center;
+}
+
+.mi-info{
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+   align-content: center;
+    gap: 1rem
+ }
+
+
+ /**  FOOTER */
+
+
+ footer{
+
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+ }
+
+.footer-nav{
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+
+}
+
+ .social-media{
+     display: flex;
+     gap: 0.5rem;
+     font-size: 36px;
+    }
+
+    .app-images{
+        display: flex;
+        flex-direction: row;
+        gap:0.5rem
+    }
+    .app-images img {
+   
+        width: 100px;
+        height: auto; /* En-boy oranını korur */
+        object-fit: contain; /* Resim taşmadan sığar */
+    }
